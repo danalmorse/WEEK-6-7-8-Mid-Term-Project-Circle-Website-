@@ -22,50 +22,43 @@
           <a href = "#">
             <img src="./project-assets/logos/circle.svg" alt="circle-logo" class="logoheader">
           </a>
-          
           <ul class="nav-bar-ul"> <!---->
-            <li><a href="#home">Home</a></li>
+            <li><a class="hometext" href="#home">Home</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#services">Services</a></li>
           </ul>
-          <button type="submit" class="contact-uss">Contact Us</button> 
-          <a class="contact-us" href="#contactus">Contact Us</a>
+          <button type="submit" class="contact-us"><a href="#contactus">Contact Us</a></button> 
         </nav>
     </header>
     <!-- 2) section: Hero Section-->
     <section id="herosection">
         <div id="EmpowerPart">
             <div id="heroContent">
-                <fieldset id="heroContent-header-info">
-                    <h1>Empower Your Business With Stunning Design!</h1>
-                    <article>
-                        <p>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p> <!--body regular text-->
-                    </article>
-                    <button type="submit" class="get-in-touch">Get in touch</button> 
-                    <a class="get-in-touchh" href="#getintouch">Get in touch</a>
+                <article id="heroContent-header-info"> <!--cambiarlo a article-->
+                    <h1 class="heading-h1">Empower Your Business With Stunning Design!</h1>
+                    <p class="bodyregulartext">Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p> <!--body regular text-->
+                    <button type="submit" class="get-in-touch"><a class="get-in-touch-btn" href="#getintouch">Get in touch</a></button> 
                     <a class="seeourwork" href="#seeourwork">See our work</a> <!--headline medium text-->
-                </fieldset>
+                </article>
             </div>
         </div>
-        <div id="heroContent-card-guyimage">
-            <fieldset id="guyimage">
-                <div id="card1">
+        <div id="heroContent-card-guyimage"> <!---->
+                <figure id="card1"> 
                     <img src="./project-assets/hero-section/card-1.png" alt="cardimage" class="card1">
-                </div>
-                <div id="heroimage">
+                </figure>
+                <figure id="heroimage">
                     <img src="./project-assets/hero-section/hero-image.png" alt="heroimage" class="heroimage">
-                </div>
-                <div id="card2">
+                </figure>
+                <figure id="card2">
                     <img src="./project-assets/hero-section/card-2.png" alt="project has been completed" class="card2">
-                </div>
-            </fieldset>
+                </figure>
         </div>
     </section>
 
     <!-- 3) section: client section-->
     <section id="clientsection">
         <div id="clientimages">
-            <ul class="client images">
+            <ul class="clientimagesgrey">
                 <li><img src="./project-assets/logos/airbnb-logo.svg" alt="airbnblogo" class="airbnbimage"></li>
                 <li><img src="./project-assets/logos/google-logo.svg" alt="googlelogo" class="googleimage"></li>
                 <li><img src="./project-assets/logos/microsoft-logo.svg" alt="microsoftlogo" class="microsoftimage"></li>
@@ -81,25 +74,25 @@
             <div id="recent-projects-header">
               <h3 class="heading-h3">Recent Projects</h3>
             </div>
-            <div id="alig-icons">
-              <fieldset id="fieldset1">
+            <div id="threeblocks">
+              <article id="article1"> <!---->
                 <img src="./project-assets/projects-section/1.jpg" alt="Simplifyicon" class="simplify-img">
                 <p class="bodymediumtext">Simplify</p>
                 <p class="headlineregulartext">UI Design & App Development</p>
                 <a class="learnmore-btn" href="#">Learn More</a>
-              </fieldset>
-              <fieldset class="fieldset2">
+              </article>
+              <article class="article2"> <!---->
                 <img src="./project-assets/projects-section/2.jpg" alt="Dashcoinicon" class="dashcoin-img">
                 <p class="bodymediumtext">Dashcoin</p>
                 <p class="headlineregulartext">Web Development</p>
                 <a class="learnmore-btn" href="#">Learn More</a>
-              </fieldset>
-              <fieldset class="fieldset3">
+              </article>
+              <article class="article3"> <!---->
                 <img src="./project-assets/projects-section/3.jpg" alt="Vectorifyicon" class="vectorify-img">
                 <p class="bodymediumtext">Vectorify</p>
                 <p class="headlineregulartext">User Experience Design</p>
                 <a class="learnmore-btn" href="#">Learn More</a>
-              </fieldset>
+              </article>
             </div>
     </section>  
     
@@ -112,20 +105,15 @@
                 <img src="./project-assets/testimonial-section/memoji-2.png" alt="emoji2" class="emoji2-img">
                 <img src="./project-assets/testimonial-section/memoji-3.png" alt="emoji3" class="emoji3-img">
                 <img src="./project-assets/testimonial-section/memoji-4.png" alt="emoji4" class="emoji4-img">
+                
                 <div id="hear-info-middle">
-                    <h3 class="heading-h3">Hear What Our Clients Have to Say</h3>
-                    <article>
-                        <p>“Circle helped us through every stage of our startup. We really enjoyed working with you.”</p>
-                    </article>
-                    <div id="kristinwatson">
+                    <h3 class="heading-h3-2">Hear What Our Clients Have to Say</h3> <!--the text color here is white-->
+                    <p class="bodymediumtext-2">“Circle helped us through every stage of our startup. We really enjoyed working with you.”</p>
+                    <article id="kristinwatson"> <!---->
                         <img src="./project-assets/testimonial-section/profile.png" alt="kristin-watson" class="profile-img">
-                        <p class="kristinwatsoninfo">
-                            Kristin Watson
-                        </p>
-                        <p class="kristinwatsonwork">
-                            Booking.com
-                        </p>
-                    </div>
+                        <p class="kristinwatsoninfo">Kristin Watson</p>
+                        <a class="booking" href="#booking.com">Booking.com</a>
+                    </article>
                 </div>
             </div>
         </div>
@@ -137,25 +125,72 @@
             <div id="our-services-header">
               <h3 class="heading-h3">Our Services</h3>
             </div>
-            <div id="alig-icons">
-              <fieldset id="fieldset4">
+            <div id="threeblocks">
+              <article id="article1"> <!---->
                 <img src="./project-assets/services-section/icons/1.svg" alt="User interfase design icon" class="userinterfase-img">
                 <p class="bodymediumtext">User Interface Design</p>
                 <p class="bodyregulartext">Circle provides you with a stunning user interface design that is accessible to everyone.</p>
                 <a class="learnmore-btn" href="#">Learn More</a>
-              </fieldset>
-              <fieldset class="fieldset5">
+              </article>
+              <article class="article2"> <!---->
                 <img src="./project-assets/services-section/icons/2.svg" alt="User experience design icon" class="userexperience-img">
                 <p class="bodymediumtext">User Experience Design</p>
                 <p class="bodyregulartext">Circle always focuses on delivering the best user experience to your customers.</p>
                 <a class="learnmore-btn" href="#">Learn More</a>
-              </fieldset>
-              <fieldset class="fieldset6">
+              </article>
+              <article class="article3"> <!---->
                 <img src="./project-assets/services-section/icons/3.svg" alt="application development design icon" class="applicationdev-img">
                 <p class="bodymediumtext">Application Development</p>
                 <p class="bodyregulartext">We develop high-quality mobile and web applications using the latest technology stack.</p>
                 <a class="learnmore-btn" href="#">Learn More</a>
-              </fieldset>
+              </article>
             </div>
     </section>
+
+     <!-- 7) section: CTA section-->
+    <section id="ctasection">
+        <div id="ctasectionoverall">
+            <h3 class="heading-h3">Do you have any questions?</h3>
+            <p class="bodyregulartext-2">Let us help you!</p>
+           
+            <div id="contactform-subscribe">
+                <article class="emailform-subscribe">
+                    
+                    <form action="/some-url" method="POST" id="form-container" class="form"> <!--preguntar si es asi¿?-->
+                        <div>             
+                            <i class= emailicon><img src="./project-assets/newsletter/icon/mail.svg" alt="mailimage" class="mail-img"></i>
+                            <input type="email" placeholder="Enter your email" name="email" id="email" class="email">                
+                            <button type="submit" class="subscribe">Subscribe</button>
+                        </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8) section: Footer section-->
+    <footer class="footer">
+        <div id="footerinfo">
+            <article>
+                <a href = "#">
+                    <img src="./project-assets/logos/circle.svg" alt="circle-logo" class="logofooter">
+                </a>
+                <address class="address"> <!--headline regular text-->
+                    2972 Westheimer Rd. Santa Ana,<br>
+                    Illinois 85486 
+                </address>
+            </article>
+            <article class="footerlist">
+                <ul class="footerlist-ul">
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </article>           
+        </div>
+    </footer>
+
 </body>
+</html>
