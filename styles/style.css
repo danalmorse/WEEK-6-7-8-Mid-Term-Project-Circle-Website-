@@ -10,8 +10,6 @@ body {
     background-color: #F2F4FC;
 }
 
-
-
 h1,
 h2,
 h3,
@@ -20,6 +18,9 @@ h4 {/* poner en igualdad todas las propiedades que comparten ejm bold, text alig
     font-weight: bold; 
     /*width: fit-content;*/
 }
+
+/*-------------------------------- INDEX HTML---------------------------------------------------------------------------------------------------------------*/
+
 /*-------------------------------- SECTION NAV BAR-------------------------------------------------------------*/
 #navigation-bar {
     margin: 0px 20px 0px 20px;
@@ -33,7 +34,6 @@ h4 {/* poner en igualdad todas las propiedades que comparten ejm bold, text alig
     /*display: grid;
     grid-template-columns: 1fr 12fr 1fr;*/
     padding: 30px 0px 0px 0px;
-    
 }
 
 .logoheader {
@@ -60,7 +60,7 @@ h4 {/* poner en igualdad todas las propiedades que comparten ejm bold, text alig
 
 .nav-bar-ul li {
     padding-right: 30px;
-    }
+}
 
 .contact-us {
     display: none;
@@ -89,7 +89,6 @@ h4 {/* poner en igualdad todas las propiedades que comparten ejm bold, text alig
     flex-direction: column;
     width: 100%;
     text-align: center;
-
 }
 
 #empowerpart {
@@ -126,7 +125,6 @@ h4 {/* poner en igualdad todas las propiedades que comparten ejm bold, text alig
     align-items: center;*/
     list-style-type: none;
     margin-top: 20px;
-    
 }
 
 .get-in-touch {
@@ -144,7 +142,6 @@ h4 {/* poner en igualdad todas las propiedades que comparten ejm bold, text alig
     color: #F2F4FC;
     padding: 5px 5px 5px 5px;
     text-decoration: none;
-    
 }
 
 .seeourwork { /*HEADLINE MEDIUM, link en hero section, igual que parte nav bar */
@@ -196,7 +193,6 @@ h4 {/* poner en igualdad todas las propiedades que comparten ejm bold, text alig
     position: absolute;
     top: 660px;
     right: 30px; 
-
 }
 
 /*---------- ----------------SECTION: client section-------------------------------------------------------------*/
@@ -258,6 +254,8 @@ h4 {/* poner en igualdad todas las propiedades que comparten ejm bold, text alig
     flex-direction: column;
     width: 100%;
     text-align: center;
+    
+    
 }
 
 article {
@@ -473,7 +471,6 @@ article {
 
 #article4 {
     width: auto;
-    
 }
 
 #article5 {
@@ -498,7 +495,6 @@ article {
 #ctasectionoverall {
     text-align: center;
     margin: 20px 20px 20px 20px;
-    
 }
 
 .heading-h3-3 {
@@ -578,7 +574,6 @@ article {
     margin: 30px 30px 30px 30px;
     display: flex;
     justify-content: flex-start;
-    
     flex-direction: column;
 }
 
@@ -603,14 +598,12 @@ article {
     width: fit-content;
     text-align: left;
     margin-top: 20px;
-    
 }
 
 .footerlist {
     /*margin: 0px 50px 0px 50px;*/
     padding: 0px;
     background-color: #F2F4FC;
-
 }
 
 .footerlist-ul { /*headline regular 17*/
@@ -632,21 +625,124 @@ article {
 .footerlist-ul a {
     text-decoration: none;
     color: #6B708D;
-
 }
 
 .footerlist-ul a:hover {
     color:#072AC8;
-
 }
 
 .footerlist-ul li {
     padding: 10px 10px 10px 10px;
 }
 
+/*-------------------------------- PROJECTS HTML---------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------- SECTION Header: Simplify project--------------------------------------------------------*/
+
+#simplifyallsection {
+    margin: 50px 20px 0px 20px;
+    
+}
+
+#simplifysec {
+    width: 100%;
+}
+
+.heading-h1-projects {
+    color: #292E47;
+    font-size: 40px;
+    text-align: center;
+    /*font-size: 3.75rem; poner esto si para desktop cambia*/
+    /*width: fit-content*/
+}
+
+#subtitleanddate {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bodymediumtext-projects {
+    color: #292E47;
+    font-size: 16px;
+    font-weight: bold;
+    /*font-size: 1.5rem;*/
+    /*font-weight: medium;*/
+    /*width: fit-content;*/
+    text-align: center;
+}
+
+.date-bodyregulartext-projects {
+    color: #6B708D;
+    font-size: 13px;
+    /*font-size: 1.25rem; equals 20px*/
+    /*font-weight: regular;*/
+    /*width: fit-content;
+    text-align: left;*/
+}
+
+#article7 {
+    background-color: #F2F4FC;   
+}
+
+.simplify-img-projects {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.bodyregulartext-projects {
+    color: #6B708D;
+    text-align: justify;
+    font-size: 13px;
+    line-height: 1.6;
+    /*font-size: 1.25rem; equals 20px*/
+    /*font-weight: regular;*/
+    /*width: fit-content;
+    text-align: left;*/
+}
+
+/*------------------------- SECTION Header: OTHER projects--------------------------------------------------------*/
+#otherprojects {
+    margin: 20px 20px 0px 20px;
+}
+
+#other-projects-wrapper {
+    width: 100%;
+}
+
+.heading-h3-projects {
+    color: #292E47; /*NEUTRAL DARK*/
+    font-size: 27px;
+    /*font-size: 2.5rem;
+    font-weight: bold;
+    width: fit-content;*/
+    text-align: center;
+}
+
+.orbit-img {
+    width: 275px;
+    height: auto;   
+}
+
+.purify-img {
+    width: 275px;
+    height: auto;   
+}
+
+.criptopie-img {
+    width: 275px;
+    height: auto;   
+}
+
+/*------------------------- SECTION Header: OTHER projects--------------------------------------------------------*/
 
 /*-----------------------------------------------------------------------media QUERY--------------------------------------------------------*/
 @media (min-width:1024px) {
+    
+    /*-------------------------------- INDEX HTML---------------------------------------------------------------------------------------------------------------*/
+    
     /*--------------------------- SECTION NAV BAR-------------------------------------------------------------*/
     .contact-us {
         display: flex;
@@ -705,7 +801,7 @@ article {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        flex-direction: column;
+        /*flex-direction: column;*/
         flex-direction: row;
         text-align: left;
                 
@@ -828,5 +924,49 @@ article {
         grid-template-columns: 1fr 1fr 1fr;
         text-align: left;
         padding: 0px 0px 0px 0px;
+    }
+
+    /*------------------------- PROJECTS HTML------------------------------------------------------------------------------------------------------*/
+    /*------------------------- SECTION Header: Simplify PROJECT--------------------------------------------------------*/
     
+    #simplifyallsection {
+    }
+
+    #simplifysec {
+        /*margin: 30px 30px 30px 30px;*/
+
+    }
+    
+    #subtitleanddate {
+        flex-direction: row;
+    }
+
+    .heading-h1-projects {
+        margin: 0px 30px 0px 30px;
+        text-align: left;
+    }
+
+    .bodymediumtext-projects {
+        text-align: left;
+        padding-right: 435px;
+    }
+    
+    .date-bodyregulartext-projects {
+        text-align: right;
+    }
+
+    .bodyregulartext-projects {
+        text-align: left;        
+    }
+
+    .orbit-img {
+        width: 275px;
+        height: 209px;   
+    }
+
+    #otherprojects {
+        margin: 0px 0px 120px 0px;
+        
+    }
+
 }
