@@ -534,6 +534,9 @@ article {
     padding: 20px 0px 20px 0px;
     border-color: white;
     border: 0px solid;
+    background: url(../project-assets/newsletter/icon/mail.svg) no-repeat left;
+    /*background-color: white;*/
+    background-origin: content-box;
 }
 
 .emailicon {
