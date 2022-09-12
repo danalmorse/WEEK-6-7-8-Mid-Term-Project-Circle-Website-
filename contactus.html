@@ -18,15 +18,15 @@
     <!-- 1) Header: navigacion bar-->
     <header id="navigation-bar">
         <nav id="navbar">
-          <a href = "#">
+          <a href = "index.html">
             <img src="./project-assets/logos/circle.svg" alt="circle-logo" class="logoheader">
           </a>
           <ul class="nav-bar-ul"> <!---->
-            <li><a class="hometext" href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a class="hometext" href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
             <li><a href="#services">Services</a></li>
           </ul>
-          <button type="submit" class="contact-us"><a class="contactus" href="#contactus">Contact Us</a></button> 
+          <button type="submit" class="contact-us"><a class="contactus" href="contactus.html">Contact Us</a></button> 
         </nav>
     </header>
 
@@ -35,42 +35,28 @@
         <div id="conctactusform">
             <h1 class="heading-h1-contactus">Contact Us</h1>
             <div id="fullname">
-                <p class="bodymediumtext-projects">UI Design & App Development</p>
-                <p class="date-bodyregulartext-projects">Completed on June 22, 2021</p>
+                <label for="name" class="name-letter">Full Name *</label><br>
+                <input type="text" placeholder="Enter your full name" name="name" id="name" class="fullnamelabel"><br>
             </div>
             <div id="emailandphone">
-
+                <div class="emailbox">
+                    <label for="email" class="email-letter">Email</label><br>
+                    <input type="email" placeholder="Enter your email address" name="email" id="email" class="emaillabel"><br>
+                </div>
+                <div class="phonebox">
+                    <label for="phone" class="phone-letter">Phone</label><br>
+                    <input type="number" placeholder="Enter your phone number" name="number" id="number" class="numberlabel"><br>
+                </div>
             </div>
-            <div id="message">
-
+            <div id="messagebox">
+                <label for="message" class="message-letter">Message</label><br>  
+                <textarea name="message" placeholder="Write your message here ...." id="message" rows="10" cols="21" class="messagelabel"></textarea><br>
             </div>
             <div class="submitbtn">               
                 <button type="submit" class="submit">Submit</button>
             </div>
         </div>
     </section> 
-
-     <!-- 4) section: CTA section-->
-    <section id="ctasection">
-        <div id="ctasectionoverall">
-            <h3 class="heading-h3-3">Do you have any questions?</h3>
-            <p class="bodyregulartext-2">Let us help you!</p>
-           
-            <div id="contactform-subscribe">
-                    <div class="imgandemail">
-                        <form action="/some-url" method="POST" id="form-container" class="form"> <!--preguntar si es asi¿?-->
-                        <div class="enteremail">             
-                            <i class= emailicon><img src="./project-assets/newsletter/icon/mail.svg" alt="mailimage" class="mail-img"></i>
-                            <input type="email" placeholder="Enter your email" name="email" id="email" class="email">
-                        </div>
-                    </div>    
-                
-                <div class="subscribebtn">               
-                    <button type="submit" class="subscribe">Subscribe</button>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- 5) section: Footer section-->
     <footer id="footer">
