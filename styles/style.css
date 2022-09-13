@@ -535,9 +535,28 @@ article {
     border-color: white;
     border: 0px solid;
     background: url(../project-assets/newsletter/icon/mail.svg) no-repeat left;
-    /*background-color: white;*/
+    background-color: white;
     background-origin: content-box;
+    
 }
+
+#email2 {
+    background: white;
+    color: #292E47;
+    font-size: 12px;
+    /*font-size: 1.063rem;*/
+    /*font-weight: regular;*/
+    width: fit-content;
+    text-align: center;
+    /*padding: 20px 0px 20px 0px;*/
+    border-color: white;
+    border: 0px solid;
+    background: url(../project-assets/newsletter/icon/mail.svg) no-repeat left;
+    background-origin: content-box;
+    text-indent: 20px;
+
+}
+
 
 .emailicon {
     text-align: center;
@@ -550,7 +569,7 @@ article {
 
 .subscribebtn {
     background-color: transparent;
-    margin: 30px 0px 40px 0px;
+    margin: 30px 0px 30px 0px;
 }
 
 .subscribe { /*HEADLINE MEDIUM, link en CTA section, igual que parte nav bar */
@@ -871,6 +890,24 @@ article {
     color: #F2F4FC;
     
 }
+
+input[type="text"],
+input[type="email"],
+textarea {
+	/*display: block;*/
+	/*box-sizing: border-box;*/
+	/*border: none;*/
+	background: rgba(107, 112, 141, 0.1);
+	/*width: 100%;*/
+	/*padding: 1rem;*/
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	/*line-height: 1.4rem;*/
+	/*font-size: 0.85rem;*/
+	color: #6B708D;
+}
+
+
 
 /*-----------------------------------------------------------------------media QUERY--------------------------------------------------------*/
 @media (min-width:1024px) {
