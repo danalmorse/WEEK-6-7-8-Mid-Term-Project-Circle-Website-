@@ -17,7 +17,10 @@ const emailforms = document.getElementById("emailform");
 const phoneforms = document.getElementById("phone");
 const messageforms = document.getElementById("messageform");
 const errordisplay = document.getElementById("errordisplay");
-
+const errordisplay1 = document.getElementById("errordisplay1");
+const errordisplay2 = document.getElementById("errordisplay2");
+const errordisplay3 = document.getElementById("errordisplay3");
+const errordisplay4 = document.getElementById("errordisplay4");
 
 /*form.addEventListener('submit', (event) => {
     alert();
@@ -31,6 +34,10 @@ submittag.addEventListener("pointerup", (event2) => {
     
     /*---other variables------------------------------------------------------------------------------------------------*/
     let errors = "";
+    let errors1 = "";
+    let errors2 = "";
+    let errors3 = "";
+    let errors4 = "";
     let proceedd = false;
     let regexjscheck = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/; /*Email Validation Regex Javascript*/ 
     
@@ -39,7 +46,7 @@ submittag.addEventListener("pointerup", (event2) => {
     if (nametag.value.length <= 0) {
         nameforms.innerHTML ='<label for="name" class="name-letter" id="nameform">Full Name *</label>';
         nametag.style.border = "1px solid blue";
-        errors += "Error: invalid name not correct <br>";
+        errors1 += "Error: invalid name not correct <br>";
         proceedd = true;
       } 
       else {
@@ -51,7 +58,7 @@ submittag.addEventListener("pointerup", (event2) => {
     if (!regexjscheck.test(emailtag.value)) {
         emailforms.innerHTML = '<label for="email" class="email-letter" id="emailform">Email</label>';
         emailtag.style.border = "1px solid blue";
-        errors += "Error: invalid email<br>";
+        errors2 += "Error: invalid email<br>";
         proceedd = true;
       } 
       else {
@@ -64,7 +71,7 @@ submittag.addEventListener("pointerup", (event2) => {
     if (phonetag.value[0] !== "+") {
         phoneforms.innerHTML = '<label for="phone" class="phone-letter" id="phone">Phone</label>';
         phonetag.style.border = "1px solid blue";
-        errors += "Error: invalid information, start '+'<br>";
+        errors3 += "Error: invalid information, start '+'<br>";
         proceedd = true;
       } 
       else {
@@ -77,7 +84,7 @@ submittag.addEventListener("pointerup", (event2) => {
     if (messagetag.value.length < 50) {
         messageforms.innerHTML = '<label for="message" class="message-letter" id="messageform">Message</label>';
         messagetag.style.border = "1px solid blue";
-        errors += "Error: invalid message, minimum 50 characters <br>";
+        errors4 += "Error: invalid message, minimum 50 characters <br>";
         proceedd = true;
       } 
       else {
@@ -90,6 +97,19 @@ submittag.addEventListener("pointerup", (event2) => {
       if (proceedd) {
         errordisplay.style.color = "#072AC8";
         errordisplay.innerHTML = errors;
+
+        errordisplay1.style.color = "#072AC8";
+        errordisplay1.innerHTML = errors1;
+
+        errordisplay2.style.color = "#072AC8";
+        errordisplay2.innerHTML = errors2;
+
+        errordisplay3.style.color = "#072AC8";
+        errordisplay3.innerHTML = errors3;
+
+        errordisplay4.style.color = "#072AC8";
+        errordisplay4.innerHTML = errors4;
+
       } 
         else {
         nametag.style.border = "0px solid transparent";
