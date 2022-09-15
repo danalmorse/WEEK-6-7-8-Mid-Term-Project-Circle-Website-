@@ -29,6 +29,7 @@ const errordisplay4 = document.getElementById("errordisplay4");
 });*/
 
 submittag.addEventListener("pointerup", (event2) => {
+    alert("Read Comments");
     event2.preventDefault();
     contador.innerHTML = Number(contador.innerHTML) + 1;
     
