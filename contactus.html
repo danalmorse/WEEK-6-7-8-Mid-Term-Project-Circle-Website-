@@ -32,30 +32,32 @@
 
     <!-- 2) section: CONTACT US-->
     <section id="contactus">
-        <div id="conctactusform">
+        <form id="conctactusform">
             <h1 class="heading-h1-contactus">Contact Us</h1>
             <div id="fullname">
-                <label for="name" class="name-letter">Full Name *</label><br>
-                <input type="text" placeholder="Enter your full name" name="name" id="name" class="fullnamelabel"><br>
+                <label for="name" class="name-letter" id="nameform">Full Name *</label><br>
+                <input type="text" placeholder="Enter your full name" name="name" id="name" class="fullnamelabel" required><br>
             </div>
             <div id="emailandphone">
                 <div class="emailbox">
-                    <label for="email" class="email-letter">Email</label><br>
-                    <input type="email" placeholder="Enter your email address" name="email" id="email" class="emaillabel"><br>
+                    <label for="email" class="email-letter" id="emailform">Email</label><br>
+                    <input type="email" placeholder="Enter your email address" name="email" id="email" class="emaillabel" required><br>
                 </div>
                 <div class="phonebox">
-                    <label for="phone" class="phone-letter">Phone</label><br>
-                    <input type="text" placeholder="Enter your phone number" name="number" id="number" class="numberlabel"><br>
+                    <label for="phone" class="phone-letter" id="phone">Phone</label><br>
+                    <input type="text" placeholder="Enter your phone number" name="number" id="number" class="numberlabel" required><br>
                 </div>
             </div>
             <div id="messagebox">
-                <label for="message" class="message-letter">Message</label><br>  
-                <textarea name="message" placeholder="Write your message here ...." id="message" rows="10" cols="21" class="messagelabel"></textarea><br>
+                <label for="message" class="message-letter" id="messageform">Message</label><br>  
+                <textarea name="message" placeholder="Write your message here ...." id="message" rows="10" cols="21" minlength="50" class="messagelabel" required></textarea><br>
             </div>
+            <p id="errordisplay"></p>
             <div class="submitbtn">               
-                <button type="submit" class="submit">Submit</button>
+                <button type="submit" class="submit" id="submitbutton">Submit</button>
             </div>
-        </div>
+            <div id="contador">0</div>
+        </form>
     </section> 
 
     <!-- 5) section: Footer section-->
@@ -83,7 +85,7 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="assets/contact.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
 
 

@@ -587,7 +587,7 @@ article {
     margin: 0px;
 }
 
-/*------------------------- SECTION Header: CTA section--------------------------------------------------------*/
+/*------------------------- SECTION Header: FOOTER section--------------------------------------------------------*/
 
 #footer {
     
@@ -871,6 +871,7 @@ article {
     padding: 20px 5px 10px 5px;
     width: 95%;
     border-width: 0px;
+    
 }
 
 #messagebox {
